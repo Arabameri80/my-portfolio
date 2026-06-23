@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Poppins";
+
+  src:
+    local("Poppins"),
+    url("../public/fonts/Poppins-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins Medium";
+
+  src:
+    local("Poppins Medium"),
+    url("../public/fonts/Poppins-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins SemiBold";
+
+  src:
+    local("Poppins SemiBold"),
+    url("../public/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins Bold";
+
+  src:
+    local("Poppins Bold"),
+    url("../public/fonts/Poppins-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins Black";
+
+  src:
+    local("Poppins Black"),
+    url("../public/fonts/Poppins-Black.ttf") format("truetype");
+  font-display: swap;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@utility container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  @media (width >= 96rem) {
+    max-width: 1202px;
+  }
+}
+
+@utility bg-headerImage {
+  background-image: url("/dist/images/header-avatar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@theme {
+  --font-Poppins: "Poppins";
+  --font-PoppinsMedium: "Poppins Medium";
+  --font-PoppinsSemiBold: "Poppins SemiBold";
+  --font-PoppinsBold: "Poppins Bold";
+  --font-PoppinsBlack: "Poppins Black";
+
+  --color-green: #49af46;
+  --color-blue: #13b6ff;
+  --color-orange: #ff6331;
+  --color-pink: #ec407a;
+  --color-purple: #8540ff;
+  --color-light-orange: #f57f17;
+  --color-light-green: #0abead;
+  --color-black: #333;
+  --text-8xl: 78px;
+  --text-md: 16px;
+
+  --shadow-lightBlue: 0px 3px 59px rgba(4, 195, 255, 16%);
+  --shadow-image: 0px 0px 59px rgba(96, 233, 255, 27%);
+  --shadow-leftBtn: 0px 16px 29px rgba(11, 190, 173, 41%);
+  --shadow-rightBtn: 0px 16px 28px rgba(254, 127, 23, 24%);
+}
+
+@layer components {
+  .menu_item {
+    @apply relative pr-2.5 *:text-orange-300;
+  }
+  .menu_item::before {
+    @apply content-[''] w-1 h-1 bg-orange-300 absolute block m-auto right-0 top-0 bottom-0 rounded-full;
+  }
+
+  .hambergur-icon {
+    @apply w-11.25 h-1 bg-light-green rounded-xs relative;
+  }
+  .hambergur-icon::before {
+    @apply content-[''] w-11.25 h-1 bg-light-green rounded-xs absolute top-2.5 transition-all;
+  }
+  .hambergur-icon::after {
+    @apply content-[''] w-11.25 h-1 bg-light-green rounded-xs absolute -top-2.5 transition-all;
+  }
+
+  .x-icon {
+    @apply bg-white;
+  }
+  .x-icon::before {
+    @apply -translate-y-2.5 -rotate-45;
+  }
+  .x-icon::after {
+    @apply translate-y-2.5 rotate-45;
+  }
+}

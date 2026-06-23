@@ -1,0 +1,20 @@
+# پوشه‌ی سنگین Node.js (نجات‌دهنده‌ی اصلی!)
+node_modules/
+
+# فایل‌های سیستمی
+.DS_Store
+Thumbs.db
+
+# فایل‌های ادیتور
+.vscode/
+.idea/
+
+# فایل‌های محیطی (رمزها و کلیدها)
+.env
+.env.local
+
+# فایل‌های کش و خروجی
+*.log
+.cache/
+dist/
+build/

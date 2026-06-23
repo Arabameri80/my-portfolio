@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="font-Poppins h-500">
+    <!-- svg's -->
+    <svg class="hidden">
+      <svg
+        id="header-shape"
+        xmlns="http://www.w3.org/2000/svg"
+        width="2008.994"
+        height="382.976"
+        viewBox="0 0 2008.994 382.976"
+      >
+        <path
+          id="Shape"
+          d="M36.707,831.79s72.2,245.793,335.375,203.266,252.037-139.808,543.887-31.336,357.474,29.27,546.08-38.052,357.474,120.869,575.432,8.953c2.833-1.455,5.593-2.832,8.22-4.1-6.855,250.219,0,244.235,0,244.235l-2008.994-7Z"
+          transform="translate(-36.707 -831.79)"
+          fill="#0cbfae"
+        />
+      </svg>
+    </svg>
+
+    <!-- header -->
+    <header>
+      <!-- nav -->
+      <nav class="pt-5 pb-7 shadow-lightBlue">
+        <div class="container">
+          <div class="flex items-center justify-between">
+            <!-- logo -->
+            <div
+              class="font-PoppinsBlack text-6xl lg:text-8xl text-light-green"
+            >
+              Am.
+            </div>
+            <!-- links -->
+            <div
+              class="hidden md:flex md:gap-x-4.5 lg:gap-x-10.75 font-PoppinsMedium text-md text-black"
+            >
+              <a class="text-light-green" href="">Home</a>
+              <a href="">About us</a>
+              <a href="">Resume</a>
+              <a href="">Services</a>
+              <a href="">Portfolio</a>
+              <a href="">Pricing</a>
+              <a href="">Contact</a>
+            </div>
+            <!-- hambergur-icon -->
+            <div
+              id="menu-icon"
+              class="md:hidden w-13 h-9 flex items-center justify-center"
+            >
+              <div
+                class="hambergur-icon block md:hidden transition-colors delay-75 duration-75"
+              ></div>
+            </div>
+            <!-- mobile menu -->
+            <!-- <div
+              class="fixed min-h-screen w-50 right-0 bottom-0 top-0 flex flex-col items-center bg-white text-xl"
+            >
+              <a class="text-light-green" href="">Home</a>
+              <a href="">About us</a>
+              <a href="">Resume</a>
+              <a href="">Services</a>
+              <a href="">Portfolio</a>
+              <a href="">Pricing</a>
+              <a href="">Contact</a>
+            </div> -->
+          </div>
+        </div>
+      </nav>
+
+      <!-- main header -->
+      <div class="container">
+        <div class="flex items-center justify-between mt-32">
+          <div>
+            <div class="flex flex-col gap-y-3.5 mb-10">
+              <h2 class="font-PoppinsSemiBold text-[28px] text-light-green">
+                Hello, IM <span class="text-orange">Arab Ameri</span>
+              </h2>
+              <p class="font-PoppinsBold text-5xl text-light-green">
+                Creative Designer
+              </p>
+              <p class="text-md text-black">
+                Freelancer Web/ Mobile UI/UX Designer with Motion Graphics
+              </p>
+            </div>
+            <div class="flex items-center gap-x-7.5">
+              <a
+                class="w-50 h-15 flex justify-center items-center shadow-leftBtn bg-light-green rounded-4xl text-white"
+                href=""
+                >Hire Me</a
+              >
+              <a
+                class="w-50 h-15 flex justify-center items-center shadow-rightBtn bg-light-orange rounded-4xl text-white"
+                href=""
+                >Get Resume</a
+              >
+            </div>
+          </div>
+          <div
+            class="size-142.5 rounded-full shadow-image p-11.5 bg-headerImage bg-position-[-191px] border-25 border-white"
+          ></div>
+        </div>
+      </div>
+
+      <svg class="w-full h-95.5 -mt-25">
+        <use class="w-full" xlink:href="#header-shape"></use>
+      </svg>
+    </header>
+
+    <script src="../public/app.js"></script>
+  </body>
+</html>
