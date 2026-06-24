@@ -55,7 +55,10 @@
 @utility bg-headerImage {
   background-image: url("/dist/images/header-avatar.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+}
+@utility bg-wave {
+  background-image: url("/dist/images/shapes/wave.svg");
+  background-repeat: no-repeat;
 }
 
 @theme {
@@ -80,6 +83,8 @@
   --shadow-image: 0px 0px 59px rgba(96, 233, 255, 27%);
   --shadow-leftBtn: 0px 16px 29px rgba(11, 190, 173, 41%);
   --shadow-rightBtn: 0px 16px 28px rgba(254, 127, 23, 24%);
+
+  --breakpoint-xs: 430px;
 }
 
 @layer components {
@@ -108,5 +113,24 @@
   }
   .x-icon::after {
     @apply translate-y-2.5 rotate-45;
+  }
+
+  .mobile_menu {
+    @apply absolute z-20 flex md:hidden flex-col items-center w-8/10 *:mt-5 translate-x-1/2 right-1/2 top-full bg-white text-xl shadow-2xl transition-all duration-250 h-0 overflow-hidden;
+  }
+
+  /* .mobile_menu-open {
+    @apply visible opacity-100 translate-y-7;
+  } */
+
+  .mobile_menu-open {
+    @apply h-90;
+  }
+
+  .overlay {
+    @apply absolute top-35 inset-0 w-full h-full bg-black/20 z-10 md:hidden transition-all duration-250 invisible opacity-0;
+  }
+  .overlay-open {
+    @apply visible opacity-100;
   }
 }

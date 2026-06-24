@@ -6,7 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
-  <body class="font-Poppins h-500">
+  <body class="font-Poppins h-500 relative">
     <!-- svg's -->
     <svg class="hidden">
       <svg
@@ -26,9 +26,11 @@
     </svg>
 
     <!-- header -->
-    <header>
+    <header class="">
       <!-- nav -->
-      <nav class="pt-5 pb-7 shadow-lightBlue">
+      <nav
+        class="nav pt-5 pb-7 shadow-lightBlue fixed left-0 right-0 z-20 bg-white md:relative"
+      >
         <div class="container">
           <div class="flex items-center justify-between">
             <!-- logo -->
@@ -39,7 +41,7 @@
             </div>
             <!-- links -->
             <div
-              class="hidden md:flex md:gap-x-4.5 lg:gap-x-10.75 font-PoppinsMedium text-md text-black"
+              class="hidden md:flex md:gap-x-4.5 lg:gap-x-10.75 font-PoppinsMedium text-md text-black *:hover:text-light-green *:transition-colors"
             >
               <a class="text-light-green" href="">Home</a>
               <a href="">About us</a>
@@ -59,9 +61,7 @@
               ></div>
             </div>
             <!-- mobile menu -->
-            <!-- <div
-              class="fixed min-h-screen w-50 right-0 bottom-0 top-0 flex flex-col items-center bg-white text-xl"
-            >
+            <div class="mobile_menu">
               <a class="text-light-green" href="">Home</a>
               <a href="">About us</a>
               <a href="">Resume</a>
@@ -69,50 +69,63 @@
               <a href="">Portfolio</a>
               <a href="">Pricing</a>
               <a href="">Contact</a>
-            </div> -->
+            </div>
           </div>
         </div>
       </nav>
 
-      <!-- main header -->
-      <div class="container">
-        <div class="flex items-center justify-between mt-32">
-          <div>
-            <div class="flex flex-col gap-y-3.5 mb-10">
-              <h2 class="font-PoppinsSemiBold text-[28px] text-light-green">
-                Hello, IM <span class="text-orange">Arab Ameri</span>
-              </h2>
-              <p class="font-PoppinsBold text-5xl text-light-green">
-                Creative Designer
-              </p>
-              <p class="text-md text-black">
-                Freelancer Web/ Mobile UI/UX Designer with Motion Graphics
-              </p>
-            </div>
-            <div class="flex items-center gap-x-7.5">
-              <a
-                class="w-50 h-15 flex justify-center items-center shadow-leftBtn bg-light-green rounded-4xl text-white"
-                href=""
-                >Hire Me</a
-              >
-              <a
-                class="w-50 h-15 flex justify-center items-center shadow-rightBtn bg-light-orange rounded-4xl text-white"
-                href=""
-                >Get Resume</a
-              >
-            </div>
-          </div>
+      <section class="home lg:bg-wave bg-none lg:bg-bottom lg:h-250">
+        <!-- main header -->
+        <div class="container">
           <div
-            class="size-142.5 rounded-full shadow-image p-11.5 bg-headerImage bg-position-[-191px] border-25 border-white"
-          ></div>
+            class="flex flex-col gap-14 lg:gap-0 lg:flex-row items-center justify-between mt-50 md:mt-14.5 lg:mt-32"
+          >
+            <div class="order-last lg:order-first">
+              <div
+                class="flex flex-col gap-y-3.5 mb-6.5 xs:mb-10 items-center lg:items-start"
+              >
+                <h2
+                  class="font-PoppinsSemiBold text-2xl xs:text-3xl sm:text-[28px] text-light-green"
+                >
+                  Hello, IM <span class="text-orange">Arab Ameri</span>
+                </h2>
+                <p
+                  class="font-PoppinsBold text-[32px] xs:text-[40px] sm:text-5xl text-light-green"
+                >
+                  Creative Designer
+                </p>
+                <p
+                  class="w-60.75 xs:w-78.75 sm:w-full text-md text-black opacity-70"
+                >
+                  Freelancer Web/ Mobile UI/UX Designer with Motion Graphics
+                </p>
+              </div>
+              <div
+                class="flex flex-col xs:flex-row items-center gap-7 xs:gap-x-7.5 justify-center lg:justify-start"
+              >
+                <a
+                  class="w-full xs:w-42.5 sm:w-50 h-15 flex justify-center items-center shadow-leftBtn bg-light-green rounded-4xl text-white"
+                  href=""
+                  >Hire Me</a
+                >
+                <a
+                  class="w-full xs:w-42.5 sm:w-50 h-15 flex justify-center items-center shadow-rightBtn bg-light-orange rounded-4xl text-white"
+                  href=""
+                  >Get Resume</a
+                >
+              </div>
+            </div>
+            <div
+              class="size-82.5 xs:size-95.5 sm:size-115 xl:size-142.5 rounded-full shadow-image p-11.5 bg-headerImage bg-position-[63%_0] sm:bg-position-[65%_0] lg:bg-position-[-146px] bg-auto lg:bg-cover xl:bg-position-[-191px] border-25 border-white"
+            ></div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <svg class="w-full h-95.5 -mt-25">
-        <use class="w-full" xlink:href="#header-shape"></use>
-      </svg>
+      <!-- <div class="bg-wave w-full h-full"></div> -->
     </header>
 
+    <div class="overlay"></div>
     <script src="../public/app.js"></script>
   </body>
 </html>
