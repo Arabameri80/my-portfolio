@@ -133,4 +133,8 @@
   .overlay-open {
     @apply visible opacity-100;
   }
+
+  .line::before {
+    @apply content-[''] w-9.75 h-2.75 block absolute mx-auto left-0 right-0 -top-1 bg-light-green rounded-2xl;
+  }
 }

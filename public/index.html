@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="../dist/images/Am..png" />
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
-  <body class="font-Poppins h-500 relative">
+  <body class="font-Poppins h-1000 relative">
     <!-- svg's -->
     <svg class="hidden">
       <svg
@@ -54,7 +55,7 @@
             <!-- hambergur-icon -->
             <div
               id="menu-icon"
-              class="md:hidden w-13 h-9 flex items-center justify-center"
+              class="md:hidden max-w-13 h-9 flex items-center justify-center"
             >
               <div
                 class="hambergur-icon block md:hidden transition-colors delay-75 duration-75"
@@ -73,9 +74,8 @@
           </div>
         </div>
       </nav>
-
+      <!-- section home -->
       <section class="home lg:bg-wave bg-none lg:bg-bottom lg:h-250">
-        <!-- main header -->
         <div class="container">
           <div
             class="flex flex-col gap-14 lg:gap-0 lg:flex-row items-center justify-between mt-50 md:mt-14.5 lg:mt-32"
@@ -95,7 +95,7 @@
                   Creative Designer
                 </p>
                 <p
-                  class="w-60.75 xs:w-78.75 sm:w-full text-md text-black opacity-70"
+                  class="max-w-60.75 xs:max-w-78.75 sm:w-full text-md text-black opacity-70"
                 >
                   Freelancer Web/ Mobile UI/UX Designer with Motion Graphics
                 </p>
@@ -104,26 +104,105 @@
                 class="flex flex-col xs:flex-row items-center gap-7 xs:gap-x-7.5 justify-center lg:justify-start"
               >
                 <a
-                  class="w-full xs:w-42.5 sm:w-50 h-15 flex justify-center items-center shadow-leftBtn bg-light-green rounded-4xl text-white"
+                  class="w-full xs:max-w-42.5 sm:max-w-50 h-15 flex justify-center items-center shadow-leftBtn bg-light-green rounded-4xl text-white"
                   href=""
                   >Hire Me</a
                 >
                 <a
-                  class="w-full xs:w-42.5 sm:w-50 h-15 flex justify-center items-center shadow-rightBtn bg-light-orange rounded-4xl text-white"
+                  class="w-full xs:max-w-42.5 sm:max-w-50 h-15 flex justify-center items-center shadow-rightBtn bg-light-orange rounded-4xl text-white"
                   href=""
                   >Get Resume</a
                 >
               </div>
             </div>
             <div
-              class="size-82.5 xs:size-95.5 sm:size-115 xl:size-142.5 rounded-full shadow-image p-11.5 bg-headerImage bg-position-[63%_0] sm:bg-position-[65%_0] lg:bg-position-[-146px] bg-auto lg:bg-cover xl:bg-position-[-191px] border-25 border-white"
+              class="size-80 xs:size-95.5 sm:size-115 xl:size-142.5 rounded-full shadow-image p-11.5 bg-headerImage bg-position-[63%_0] sm:bg-position-[65%_0] lg:bg-position-[-146px] bg-auto lg:bg-cover xl:bg-position-[-191px] border-25 border-white"
             ></div>
           </div>
         </div>
       </section>
-
       <!-- <div class="bg-wave w-full h-full"></div> -->
     </header>
+    <!-- main -->
+    <main>
+      <!-- about us -->
+      <section class="About-us">
+        <div class="container">
+          <!-- title -->
+          <div class="mx-auto max-w-60 flex flex-col items-center mt-[91.6px]">
+            <h2
+              class="font-PoppinsBold text-[32px] xs:text-5xl text-light-green leading-14"
+            >
+              About Us
+            </h2>
+            <p class="tracking-[3px] leading-5 mt-3.25 text-light-green">
+              Why Choose Me?
+            </p>
+            <span
+              class="line inline-block w-60 h-0.75 bg-light-green relative mt-7.5"
+            ></span>
+          </div>
+
+          <!-- main section -->
+          <div class="mt-17.5 flex flex-col lg:flex-row shadow-image">
+            <!-- main section image -->
+            <div class="basis-1/2 h-165.75">
+              <img
+                class="w-full h-full object-cover"
+                src="../dist/images/about-us-man.jpg"
+                alt=""
+              />
+            </div>
+            <!-- section text -->
+            <div class="basis-1/2">
+              <div class="py-10 lg:pb-0 lg:pt-13 pl-10.5 pr-10.5 lg:pr-0">
+                <h2 class="font-PoppinsSemiBold text-2xl leading-6 mb-4.5">
+                  Why Choose me ?
+                </h2>
+                <p
+                  class="mb-7 lg:mb-18.5 font-Poppins text-md leading-[23.4px] max-w-162.5 h-19.5 lg:w-115.25 lg:h-29.25 line-clamp-3 lg:line-clamp-5 overflow-y-auto"
+                >
+                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+                  used in laying out print, graphic or web designs. The passage
+                  is attributed to an unknown typesetter in the 15th century who
+                  is thought to have scrambled parts of Cicero's.
+                </p>
+                <h2
+                  class="font-PoppinsSemiBold text-[18px] text-light-green tracking-[1px] mb-3.75"
+                >
+                  Here is Few Features:
+                </h2>
+                <ul
+                  class="space-y-3.5 text-[15px] xs:text-md *:before:content-[''] *:before:inline-block *:before:size-3.75 *:before:bg-light-orange *:before:rounded-full *:before:mr-4 *:before:ml-2.5 *:before:translate-y-0.5 mb-10"
+                >
+                  <li>User Interface Design</li>
+                  <li>User Experience Design</li>
+                  <li>Visual Commination Design</li>
+                  <li>Interaction Design</li>
+                  <li>Supper Support</li>
+                </ul>
+
+                <!-- btn's -->
+                <div
+                  class="flex flex-col xs:flex-row items-center gap-7 xs:gap-x-7.5 justify-center lg:justify-start flex-wrap sm:flex-nowrap"
+                >
+                  <a
+                    class="w-full lg:max-w-50 h-15 flex justify-center items-center shadow-leftBtn bg-light-green rounded-4xl text-white"
+                    href=""
+                    >Hire Me</a
+                  >
+                  <a
+                    class="w-full lg:max-w-50 h-15 flex justify-center items-center shadow-rightBtn bg-light-orange rounded-4xl text-white"
+                    href=""
+                    >Get Resume</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <div class="overlay"></div>
     <script src="../public/app.js"></script>
