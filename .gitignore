@@ -16,5 +16,4 @@ Thumbs.db
 # فایل‌های کش و خروجی
 *.log
 .cache/
-dist/
 build/
