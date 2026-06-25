@@ -17,3 +17,6 @@ Thumbs.db
 *.log
 .cache/
 build/
+
+# فایل خروجی CSS
+dist/output.css
