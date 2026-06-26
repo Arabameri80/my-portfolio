@@ -60,6 +60,30 @@
   background-image: url("/dist/images/shapes/wave.svg");
   background-repeat: no-repeat;
 }
+@utility bg-web {
+  background-image: url("/dist/images/shapes/service-shape.svg");
+  background-repeat: no-repeat;
+}
+@utility bg-1 {
+  background-image: url("/dist/images/shapes/sh1.svg");
+  background-repeat: no-repeat;
+}
+@utility bg-2 {
+  background-image: url("/dist/images/shapes/sh2.svg");
+  background-repeat: no-repeat;
+}
+@utility bg-3 {
+  background-image: url("/dist/images/shapes/sh3.svg");
+  background-repeat: no-repeat;
+}
+@utility bg-4 {
+  background-image: url("/dist/images/shapes/sh4.svg");
+  background-repeat: no-repeat;
+}
+@utility bg-5 {
+  background-image: url("/dist/images/shapes/sh5.svg");
+  background-repeat: no-repeat;
+}
 
 @theme {
   --font-Poppins: "Poppins";
@@ -75,6 +99,7 @@
   --color-purple: #8540ff;
   --color-light-orange: #f57f17;
   --color-light-green: #0abead;
+  --color-yellow: #ffc50c;
   --color-black: #333;
   --text-8xl: 78px;
   --text-md: 16px;
