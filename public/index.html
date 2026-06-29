@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="../dist/images/Am..png" />
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
-  <body class="font-Poppins h-1000 relative">
+  <body class="font-Poppins h-1500 relative">
     <!-- svg's -->
     <svg class="hidden">
       <svg
@@ -359,10 +359,13 @@
           <div class="flex flex-col lg:flex-row gap-13.5">
             <!-- Resume items -->
             <ul
-              class="Resume_items relative shadow-image py-13.5 *:flex *:pl-3 *:items-center space-y-11 *:font-PoppinsSemiBold *:text-xl *:relative basis-1/3"
+              class="Resume_items h-106 relative shadow-image py-13.5 *:flex *:pl-3 *:items-center space-y-11 *:font-PoppinsSemiBold *:text-xl *:relative basis-1/3"
             >
               <li>
-                <div class="item flex items-center cursor-pointer">
+                <div
+                  class="item flex items-center cursor-pointer"
+                  data-content=".education"
+                >
                   <div class="link_btn selected_item">
                     <img
                       src="../dist/images/icons/usergraduate-icon.svg"
@@ -374,7 +377,10 @@
               </li>
 
               <li>
-                <div class="item flex items-center cursor-pointer">
+                <div
+                  class="item flex items-center cursor-pointer"
+                  data-content=".work-history"
+                >
                   <div class="link_btn">
                     <img src="../dist/images/icons/history-icon.svg" alt="" />
                   </div>
@@ -383,7 +389,10 @@
               </li>
 
               <li>
-                <div class="item flex items-center cursor-pointer">
+                <div
+                  class="item flex items-center cursor-pointer"
+                  data-content=".programming-skill"
+                >
                   <div class="link_btn">
                     <img
                       src="../dist/images/icons/laptopcode-icon.svg"
@@ -395,7 +404,10 @@
               </li>
 
               <li>
-                <div class="item flex items-center cursor-pointer">
+                <div
+                  class="item flex items-center cursor-pointer"
+                  data-content=".designer-skills"
+                >
                   <div class="link_btn">
                     <img
                       src="../dist/images/icons/mapgallery-icon.svg"
@@ -407,7 +419,10 @@
               </li>
 
               <li>
-                <div class="item flex items-center cursor-pointer">
+                <div
+                  class="item flex items-center cursor-pointer"
+                  data-content=".seo-skills"
+                >
                   <div class="link_btn">
                     <img src="../dist/images/icons/chartbar-icon.svg" alt="" />
                   </div>
@@ -416,9 +431,8 @@
               </li>
             </ul>
             <!-- resume-tabs -->
-            <div
-              class="py-5 border-l-2 border-light-green basis-2/3 pl-6 space-y-6"
-            >
+            <!-- education -->
+            <div class="resume-tab resume-tab-show education transition-all">
               <div>
                 <div
                   class="heading_resume_tab_item flex items-center justify-between mb-4 relative"
@@ -475,6 +489,287 @@
                 </p>
               </div>
             </div>
+            <!-- Work History -->
+            <div class="resume-tab work-history transition-all">
+              <div>
+                <div
+                  class="heading_resume_tab_item flex items-center justify-between mb-4 relative"
+                >
+                  <h2 class="font-PoppinsSemiBold text-xl text-light-orange">
+                    Envato University
+                  </h2>
+                  <span
+                    class="w-27.5 h-7.5 bg-orange text-white rounded-2xl flex items-center justify-center"
+                    >2010-2014</span
+                  >
+                </div>
+                <p class="mb-2.5">B.sc in Computer Engineer</p>
+                <p>
+                  Reference site about Lorem Ipsum, giving information on its
+                  origins, as well as a random Lipsum generator.
+                </p>
+              </div>
+
+              <div>
+                <div
+                  class="heading_resume_tab_item flex items-center justify-between mb-4 relative"
+                >
+                  <h2 class="font-PoppinsSemiBold text-xl text-light-orange">
+                    Envato University
+                  </h2>
+                  <span
+                    class="w-27.5 h-7.5 bg-orange text-white rounded-2xl flex items-center justify-center"
+                    >2010-2014</span
+                  >
+                </div>
+                <p class="mb-2.5">B.sc in Computer Engineer</p>
+                <p>
+                  Reference site about Lorem Ipsum, giving information on its
+                  origins, as well as a random Lipsum generator.
+                </p>
+              </div>
+            </div>
+            <!-- Programming Skill -->
+            <div class="resume-tab programming-skill transition-all">
+              <div>
+                <div
+                  class="heading_resume_tab_item flex items-center justify-between mb-4 relative"
+                >
+                  <h2 class="font-PoppinsSemiBold text-xl text-light-orange">
+                    Envato University
+                  </h2>
+                  <span
+                    class="w-27.5 h-7.5 bg-orange text-white rounded-2xl flex items-center justify-center"
+                    >2010-2014</span
+                  >
+                </div>
+                <p class="mb-2.5">B.sc in Computer Engineer</p>
+                <p>
+                  Reference site about Lorem Ipsum, giving information on its
+                  origins, as well as a random Lipsum generator.
+                </p>
+              </div>
+
+              <div>
+                <div
+                  class="heading_resume_tab_item flex items-center justify-between mb-4 relative"
+                >
+                  <h2 class="font-PoppinsSemiBold text-xl text-light-orange">
+                    Envato University
+                  </h2>
+                  <span
+                    class="w-27.5 h-7.5 bg-orange text-white rounded-2xl flex items-center justify-center"
+                    >2010-2014</span
+                  >
+                </div>
+                <p class="mb-2.5">B.sc in Computer Engineer</p>
+                <p>
+                  Reference site about Lorem Ipsum, giving information on its
+                  origins, as well as a random Lipsum generator.
+                </p>
+              </div>
+              <div>
+                <div
+                  class="heading_resume_tab_item flex items-center justify-between mb-4 relative"
+                >
+                  <h2 class="font-PoppinsSemiBold text-xl text-light-orange">
+                    Envato University
+                  </h2>
+                  <span
+                    class="w-27.5 h-7.5 bg-orange text-white rounded-2xl flex items-center justify-center"
+                    >2010-2014</span
+                  >
+                </div>
+                <p class="mb-2.5">B.sc in Computer Engineer</p>
+                <p>
+                  Reference site about Lorem Ipsum, giving information on its
+                  origins, as well as a random Lipsum generator.
+                </p>
+              </div>
+            </div>
+            <!-- Designer Skills -->
+            <div class="resume-tab designer-skills transition-all">
+              <div>
+                <div
+                  class="heading_resume_tab_item flex items-center justify-between mb-4 relative"
+                >
+                  <h2 class="font-PoppinsSemiBold text-xl text-light-orange">
+                    Envato University
+                  </h2>
+                  <span
+                    class="w-27.5 h-7.5 bg-orange text-white rounded-2xl flex items-center justify-center"
+                    >2010-2014</span
+                  >
+                </div>
+                <p class="mb-2.5">B.sc in Computer Engineer</p>
+                <p>
+                  Reference site about Lorem Ipsum, giving information on its
+                  origins, as well as a random Lipsum generator.
+                </p>
+              </div>
+
+              <div>
+                <div
+                  class="heading_resume_tab_item flex items-center justify-between mb-4 relative"
+                >
+                  <h2 class="font-PoppinsSemiBold text-xl text-light-orange">
+                    Envato University
+                  </h2>
+                  <span
+                    class="w-27.5 h-7.5 bg-orange text-white rounded-2xl flex items-center justify-center"
+                    >2010-2014</span
+                  >
+                </div>
+                <p class="mb-2.5">B.sc in Computer Engineer</p>
+                <p>
+                  Reference site about Lorem Ipsum, giving information on its
+                  origins, as well as a random Lipsum generator.
+                </p>
+              </div>
+              <div>
+                <div
+                  class="heading_resume_tab_item flex items-center justify-between mb-4 relative"
+                >
+                  <h2 class="font-PoppinsSemiBold text-xl text-light-orange">
+                    Envato University
+                  </h2>
+                  <span
+                    class="w-27.5 h-7.5 bg-orange text-white rounded-2xl flex items-center justify-center"
+                    >2010-2014</span
+                  >
+                </div>
+                <p class="mb-2.5">B.sc in Computer Engineer</p>
+                <p>
+                  Reference site about Lorem Ipsum, giving information on its
+                  origins, as well as a random Lipsum generator.
+                </p>
+              </div>
+            </div>
+            <!-- SEO Skills -->
+            <div class="resume-tab seo-skills transition-all">
+              <div>
+                <div
+                  class="heading_resume_tab_item flex items-center justify-between mb-4 relative"
+                >
+                  <h2 class="font-PoppinsSemiBold text-xl text-light-orange">
+                    Envato University
+                  </h2>
+                  <span
+                    class="w-27.5 h-7.5 bg-orange text-white rounded-2xl flex items-center justify-center"
+                    >2010-2014</span
+                  >
+                </div>
+                <p class="mb-2.5">B.sc in Computer Engineer</p>
+                <p>
+                  Reference site about Lorem Ipsum, giving information on its
+                  origins, as well as a random Lipsum generator.
+                </p>
+              </div>
+
+              <div>
+                <div
+                  class="heading_resume_tab_item flex items-center justify-between mb-4 relative"
+                >
+                  <h2 class="font-PoppinsSemiBold text-xl text-light-orange">
+                    Envato University
+                  </h2>
+                  <span
+                    class="w-27.5 h-7.5 bg-orange text-white rounded-2xl flex items-center justify-center"
+                    >2010-2014</span
+                  >
+                </div>
+                <p class="mb-2.5">B.sc in Computer Engineer</p>
+                <p>
+                  Reference site about Lorem Ipsum, giving information on its
+                  origins, as well as a random Lipsum generator.
+                </p>
+              </div>
+              <div>
+                <div
+                  class="heading_resume_tab_item flex items-center justify-between mb-4 relative"
+                >
+                  <h2 class="font-PoppinsSemiBold text-xl text-light-orange">
+                    Envato University
+                  </h2>
+                  <span
+                    class="w-27.5 h-7.5 bg-orange text-white rounded-2xl flex items-center justify-center"
+                    >2010-2014</span
+                  >
+                </div>
+                <p class="mb-2.5">B.sc in Computer Engineer</p>
+                <p>
+                  Reference site about Lorem Ipsum, giving information on its
+                  origins, as well as a random Lipsum generator.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- portfolio -->
+      <section class="portfolio Resume mt-50">
+        <div class="container">
+          <!-- title -->
+          <div class="mx-auto max-w-70 flex flex-col items-center mb-17.5">
+            <h2
+              class="font-PoppinsBold text-[32px] xs:text-5xl text-light-green leading-14"
+            >
+              Portfolio
+            </h2>
+            <p class="tracking-[2px] leading-5 mt-3.25 text-light-green">
+              Check in Our Latest Works
+            </p>
+            <span
+              class="line inline-block w-60 h-0.75 bg-light-green relative mt-7.5"
+            ></span>
+          </div>
+          <!-- portfolio list items -->
+          <ul
+            class="flex gap-12 justify-center items-center *:cursor-pointer mb-11 flex-wrap"
+          >
+            <li class="portfolio-list_item portfolio-list_item_active">
+              All Work
+            </li>
+            <li class="portfolio-list_item">Illustration</li>
+            <li class="portfolio-list_item">Animation</li>
+            <li class="portfolio-list_item">App UI</li>
+            <li class="portfolio-list_item">Web UI</li>
+            <li class="portfolio-list_item">Social Media</li>
+            <li class="portfolio-list_item">Print Design</li>
+          </ul>
+          <!-- portfolio images -->
+          <div
+            class="flex gap-12 items-center justify-center mb-4.5 *:md:flex-auto flex-wrap md:flex-nowrap"
+          >
+            <div>
+              <img
+                class="w-full md:max-w-100"
+                src="../dist/images/portfolio-1.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="w-full md:max-w-100"
+                src="../dist/images/portfolio-2.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="w-full md:max-w-100"
+                src="../dist/images/portfolio-3.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- pagination -->
+          <div
+            class="dots flex items-center justify-center gap-2.5 *:rounded-full"
+          >
+            <div class="dot dot_fill">&nbsp;</div>
+            <div class="dot">&nbsp;</div>
+            <div class="dot">&nbsp;</div>
           </div>
         </div>
       </section>

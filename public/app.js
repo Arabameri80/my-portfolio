@@ -4,6 +4,7 @@ const mobile_menu = document.querySelector(".mobile_menu");
 const overlay = document.querySelector(".overlay");
 const nav = document.querySelector(".nav");
 const items = document.querySelectorAll(".item");
+// const resumeTabs = document.querySelectorAll(".resume-tab");
 
 menu_icon.addEventListener("click", function () {
   icon.classList.toggle("x-icon");
@@ -26,11 +27,16 @@ items.forEach(function (item) {
       linkBtn.classList.remove("selected_item");
       colorSpan.classList.remove("text-white");
     });
+    document
+      .querySelector(".resume-tab-show")
+      .classList.remove("resume-tab-show");
 
     const currentLinkBtn = this.querySelector(".link_btn");
     const currentColorSpan = this.querySelector(".item_color");
 
     currentLinkBtn.classList.add("selected_item");
     currentColorSpan.classList.add("text-white");
+    const dataContent = this.getAttribute("data-content");
+    document.querySelector(dataContent).classList.add("resume-tab-show");
   });
 });

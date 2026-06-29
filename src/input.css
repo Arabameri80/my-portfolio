@@ -183,4 +183,21 @@
   .heading_resume_tab_item::before {
     @apply content-[''] size-5 rounded-full bg-light-green absolute -left-8.75;
   }
+
+  .resume-tab {
+    @apply py-5 border-l-2 border-light-green basis-2/3 pl-6 space-y-6 hidden;
+  }
+  .resume-tab-show {
+    @apply block;
+  }
+
+  .portfolio-list_item_active {
+    @apply text-white px-12 py-3 rounded-4xl bg-light-green;
+  }
+  .dot {
+    @apply size-5 border-4 border-gray-400 cursor-pointer;
+  }
+  .dot_fill {
+    @apply bg-light-green border-light-green;
+  }
 }
