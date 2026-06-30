@@ -192,12 +192,20 @@
   }
 
   .portfolio-list_item_active {
-    @apply text-white px-12 py-3 rounded-4xl bg-light-green;
+    @apply text-white rounded-4xl bg-light-green;
   }
   .dot {
     @apply size-5 border-4 border-gray-400 cursor-pointer;
   }
   .dot_fill {
     @apply bg-light-green border-light-green;
+  }
+
+  .swiper-pagination-bullet {
+    @apply size-4! bg-white! border-3 border-gray-800;
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply bg-light-green! border-0;
   }
 }

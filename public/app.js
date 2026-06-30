@@ -5,6 +5,7 @@ const overlay = document.querySelector(".overlay");
 const nav = document.querySelector(".nav");
 const items = document.querySelectorAll(".item");
 // const resumeTabs = document.querySelectorAll(".resume-tab");
+const portfolioListItems = document.querySelectorAll(".portfolio-list_item");
 
 menu_icon.addEventListener("click", function () {
   icon.classList.toggle("x-icon");
@@ -39,4 +40,38 @@ items.forEach(function (item) {
     const dataContent = this.getAttribute("data-content");
     document.querySelector(dataContent).classList.add("resume-tab-show");
   });
+});
+
+portfolioListItems.forEach(function (item) {
+  item.addEventListener("click", function () {
+    document
+      .querySelector(".portfolio-list_item_active")
+      .classList.remove("portfolio-list_item_active");
+    this.classList.add("portfolio-list_item_active");
+  });
+});
+
+// swiper js
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 1,
+  breakpoints: {
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 49,
+    },
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });

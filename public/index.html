@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="icon" type="image/png" href="../dist/images/Am..png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
   <body class="font-Poppins h-1500 relative">
@@ -725,7 +729,7 @@
           </div>
           <!-- portfolio list items -->
           <ul
-            class="flex gap-12 justify-center items-center *:cursor-pointer mb-11 flex-wrap"
+            class="flex *:px-9 *:py-3 *:transition-all justify-center items-center *:cursor-pointer mb-11 flex-wrap"
           >
             <li class="portfolio-list_item portfolio-list_item_active">
               All Work
@@ -739,43 +743,47 @@
           </ul>
           <!-- portfolio images -->
           <div
-            class="flex gap-12 items-center justify-center mb-4.5 *:md:flex-auto flex-wrap md:flex-nowrap"
+            class="swiper w-full h-139 sm:h-110 md:h-128 lg:h-108 xl:h-130 2xl:h-124"
           >
-            <div>
-              <img
-                class="w-full md:max-w-100"
-                src="../dist/images/portfolio-1.jpg"
-                alt=""
-              />
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="../dist/images/portfolio-1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../dist/images/portfolio-2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../dist/images/portfolio-3.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../dist/images/portfolio-1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../dist/images/portfolio-2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../dist/images/portfolio-3.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../dist/images/portfolio-3.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../dist/images/portfolio-3.jpg" alt="" />
+              </div>
             </div>
-            <div>
-              <img
-                class="w-full md:max-w-100"
-                src="../dist/images/portfolio-2.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                class="w-full md:max-w-100"
-                src="../dist/images/portfolio-3.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <!-- pagination -->
-          <div
-            class="dots flex items-center justify-center gap-2.5 *:rounded-full"
-          >
-            <div class="dot dot_fill">&nbsp;</div>
-            <div class="dot">&nbsp;</div>
-            <div class="dot">&nbsp;</div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
           </div>
         </div>
       </section>
     </main>
 
     <div class="overlay"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="../public/app.js"></script>
   </body>
 </html>
