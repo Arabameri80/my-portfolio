@@ -97,6 +97,7 @@
   --color-orange: #ff6331;
   --color-light-orange: #ff5823;
   --color-pink: #ec407a;
+  --color-red: #f5276c;
   --color-purple: #8540ff;
   --color-light-orange: #f57f17;
   --color-light-green: #0abead;
@@ -109,7 +110,7 @@
   --shadow-image: 0px 0px 59px rgba(96, 233, 255, 27%);
   --shadow-leftBtn: 0px 16px 29px rgba(11, 190, 173, 41%);
   --shadow-rightBtn: 0px 16px 28px rgba(254, 127, 23, 24%);
-
+  --shadow-cart: 0px 0px 81px rgba(19, 182, 255, 24%);
   --breakpoint-xs: 430px;
 }
 
